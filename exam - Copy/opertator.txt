@@ -1,0 +1,37 @@
+#include<stdio.h>
+
+#include<conio.h>
+
+int main( )
+{
+    int num1,num2,flag=1;
+    char opt;
+    while(flag){
+    	printf("Enter num1,num2 : ");
+		scanf("%d%d",&num1,&num2);
+		printf("Enter operator");
+		opt=getch();
+		printf(" \n Youre operator is: ",&opt);
+		switch(opt){
+
+		case '+':
+			printf("\n sum=%d",num1+num2);
+			break;
+		case '-':
+			printf("\n minus=%d",num1-num2);	
+			break;
+			case '*':
+			printf("\n multiply=%d",num1*num2);	
+			break;
+		case '/':
+			printf("\n division=%6.21",(float)num1/num2);	
+			break;
+		default:
+		printf("\n operator is illigal");
+		printf("\n press a key to end");
+		flag=0;
+		    }
+		    getch();
+	}
+	return 0;
+			}
